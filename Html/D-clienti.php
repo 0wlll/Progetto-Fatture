@@ -84,14 +84,14 @@ if (isset($_SESSION["user_id"])) {
         </div>
         <!--colonna a sinistra selezione clienti e fatture-->
         <nav class="nav nav-pills nav flex-column vh-100">
-            <a id="fatture" class="nav-item nav-link" href="D-fatture.php" onclick="hey()">Fatture</a>
-            <a id="c_fattura" class="nav-item nav-link disabled" href="#" onclick="addFattura()">Creazione Fattura
+            <a id="fatture" class="nav-item nav-link" href="D-fatture.php" onclick="hey()"><?php echo $translations["fas"]; ?></a>
+            <a id="c_fattura" class="nav-item nav-link disabled" href="#" onclick="addFattura()"><?php echo $translations["cfa"]; ?>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="-3 -4 20 20">
                     <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                 </svg>
             </a>
-            <a id="clienti" class="nav-item nav-link active" href="#">Clienti</a>
+            <a id="clienti" class="nav-item nav-link active" href="#"><?php echo $translations["c"]; ?></a>
         </nav>
     </div>
     <!--sezione clienti-->
@@ -148,10 +148,10 @@ if (isset($_SESSION["user_id"])) {
                     <form method="post" action="../PurePhp/aggiornaRuoli.php">
                       <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
                         <button class="dropdown-item" type="submit" name="area" value="null"><?php echo $translations["none"]; ?></button>
-                        <button class="dropdown-item" type="submit" name="area" value="nord">nord</button>
-                        <button class="dropdown-item" type="submit" name="area" value="sud">sud</button>
-                        <button class="dropdown-item" type="submit" name="area" value="est">est</button>
-                        <button class="dropdown-item" type="submit" name="area" value="ovest">ovest</button>
+                        <button class="dropdown-item" type="submit" name="area" value="nord"><?php echo $translations["nord"]; ?></button>
+                        <button class="dropdown-item" type="submit" name="area" value="sud"><?php echo $translations["south"]; ?></button>
+                        <button class="dropdown-item" type="submit" name="area" value="est"><?php echo $translations["east"]; ?></button>
+                        <button class="dropdown-item" type="submit" name="area" value="ovest"><?php echo $translations["west"]; ?></button>
                     </form>
                     </div>
                   </div>

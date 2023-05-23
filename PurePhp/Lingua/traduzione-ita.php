@@ -39,7 +39,11 @@ $translations = [
     "comm" => "Commerciale",
     "none" => "nessuno",
     "fas" => "Fatture",
-    "invalid_login" => "Login invalido"
+    "invalid_login" => "Login invalido",
+    "nord" => "nord",
+    "south" => "sud",
+    "east" => "est",
+    "west" => "ovest"
 
     // Aggiungi altre chiavi e valori delle traduzioni se necessario
 ];

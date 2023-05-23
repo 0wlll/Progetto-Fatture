@@ -148,7 +148,7 @@ if ($_SESSION["language"] === "italian") {
               <h5><?php echo $translations["sp"]; ?></h5>
               <h5 style='display:flex'>€ <?=$row["somma"]?></h5>
               <div class='btn-group' style='float: right' role='group' aria-label='Basic example'>
-                <button type='button' id='btn-modifica' data-fattura-id='<?=$row['id']?>' value='<?=$row["id"]?>' class="btn-modifica btn btn-primary" data-toggle='modal' data-target='#modifica'>Modifica</button>
+                <button type='button' id='btn-modifica' data-fattura-id='<?=$row['id']?>' value='<?=$row["id"]?>' class="btn-modifica btn btn-primary" data-toggle='modal' data-target='#modifica'><?php echo $translations["mi"]; ?></button>
                 <button type='submit' class='btn btn-secondary'><?php echo $translations["del"]; ?></button>
               </div>
             </div>

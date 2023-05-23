@@ -40,8 +40,11 @@ $translations = [
     "none" => "none",
     "fas" => "Invoices",
     "ac" => "Account created!",
-    "invalid_login" => "Invalid login"
-
+    "invalid_login" => "Invalid login",
+    "nord" => "nord",
+    "south" => "south",
+    "east" => "east",
+    "west" => "west"
     // Aggiungi altre chiavi e valori delle traduzioni se necessario
 ];
 ?>

@@ -22,6 +22,7 @@ if ($_SESSION["language"] === "italian") {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
     <script src="../JS/validation.js" defer></script>
+    <link rel="stylesheet" href="../stile.css">
     <style type="text/css">
     body{
     /* fallback for old browsers */
