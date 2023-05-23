@@ -100,9 +100,9 @@
   <script>
       function selectLanguage(language) {
           $.post("../PurePhp/Lingua/imposta-lingua.php", { language: language }, function(data) {
-              if (data === "success") {
+              //if (data === "success") {
                   window.location.reload(); // Ricarica la pagina dopo aver impostato la lingua
-              }
+              //}
           });
       }
   </script>
